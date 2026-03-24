@@ -25,4 +25,8 @@ public class DepartamentoService {
     public Optional<DepartamentoModel> buscarId(Long id){
         return departamentoRepository.findById(id);
     }
+
+    public void deletar(Long id){
+        departamentoRepository.deleteById(id);
+    }
 }
